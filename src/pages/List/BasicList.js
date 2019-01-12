@@ -157,13 +157,6 @@ class BasicList extends PureComponent {
       </div>
     );
 
-    const paginationProps = {
-      showSizeChanger: true,
-      showQuickJumper: true,
-      pageSize: 5,
-      total: 50,
-    };
-
     const ListContent = ({ data: { owner, createdAt, percent, status } }) => (
       <div className={styles.listContent}>
         <div className={styles.listContentItem}>
@@ -258,13 +251,13 @@ class BasicList extends PureComponent {
           <Card bordered={false}>
             <Row>
               <Col sm={8} xs={24}>
-                <Info title="我的待办" value="8个任务" bordered />
+                <Info title="已发布" value="5个任务" bordered />
               </Col>
               <Col sm={8} xs={24}>
-                <Info title="本周任务平均处理时间" value="32分钟" bordered />
+                <Info title="累计用时" value="32分钟" bordered />
               </Col>
               <Col sm={8} xs={24}>
-                <Info title="本周完成任务数" value="24个任务" />
+                <Info title="本周完成任务数" value="3个任务" />
               </Col>
             </Row>
           </Card>
@@ -294,7 +287,6 @@ class BasicList extends PureComponent {
               size="large"
               rowKey="id"
               loading={loading}
-              pagination={paginationProps}
               dataSource={list}
               renderItem={item => (
                 <List.Item

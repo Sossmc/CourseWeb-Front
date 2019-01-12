@@ -223,9 +223,9 @@ class SearchList extends Component {
                   }
                   description={
                     <span>
-                      <Tag>Ant Design</Tag>
+                      <Tag>课程</Tag>
                       <Tag>设计语言</Tag>
-                      <Tag>蚂蚁金服</Tag>
+                      <Tag>课后</Tag>
                     </span>
                   }
                 />

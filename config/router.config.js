@@ -79,15 +79,64 @@ export default [
         routes: [
           // profile
           {
+            path: '/profile/maina',
+            name: 'maina',
+            authority: ['user'],
+            component: './teacher/maina',
+          },
+          {
+            path: '/profile/main',
+            name: 'main',
+            authority: ['admin'],
+            component: './User/main',
+          },
+          {
+            path: '/profile/basica',
+            name: 'basic',
+            authority: ['user'],
+            component: './List/BasicList',
+          },
+          {
             path: '/profile/basic',
             name: 'basic',
-            component: './List/BasicList',
+            authority: ['admin'],
+            component: './Profile/ListStuden',
           },
           {
             path: '/profile/advanced',
             name: 'advanced',
-            authority: ['PM'],
+            authority: ['user'],
             component: './Profile/AdvancedProfile',
+          },
+          {
+            path: '/profile/exam',
+            name: 'exam',
+            authority: ['admin'],
+            component: './User/exam',
+          },
+          {
+            path: '/profile/exama',
+            name: 'exama',
+            authority: ['user'],
+            component: './teacher/exama',
+          },
+          {
+            path: '/profile/download',
+            name: 'download',
+            authority: ['admin'],
+            component: './Profile/kejian',
+          },
+          {
+            path: '/profile/downloada',
+            name: 'downloada',
+            authority: ['user'],
+            component: './teacher/downloada',
+          },
+          {
+            path: '/profile/chat',
+            name: 'chat',
+            authority: ['user','admin'],
+            component: './Profile/chat',
           },
         ],
       },
@@ -96,7 +145,7 @@ export default [
         path: '/list',
         icon: 'table',
         name: 'list',
-        authority: ['PM'],
+        authority: ['s'],
         routes: [
           {
             path: '/list/table-list',
@@ -113,32 +162,6 @@ export default [
             name: 'cardlist',
             component: './List/CardList',
           },
-          // {
-          //   path: '/list/search',
-          //   name: 'searchlist',
-          //   component: './List/List',
-          //   routes: [
-          //     {
-          //       path: '/list/search',
-          //       redirect: '/list/search/articles',
-          //     },
-          //     {
-          //       path: '/list/search/articles',
-          //       name: 'articles',
-          //       component: './List/Articles',
-          //     },
-          //     {
-          //       path: '/list/search/projects',
-          //       name: 'projects',
-          //       component: './List/Projects',
-          //     },
-          //     {
-          //       path: '/list/search/applications',
-          //       name: 'applications',
-          //       component: './List/Applications',
-          //     },
-          //   ],
-          // },
         ],
       },
       {
@@ -198,10 +221,6 @@ export default [
             routes: [
               {
                 path: '/account/center',
-                redirect: '/account/center/articles',
-              },
-              {
-                path: '/account/center/articles',
                 component: './Account/Center/Articles',
               },
             ],

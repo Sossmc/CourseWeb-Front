@@ -10,19 +10,19 @@ const FooterView = () => (
         {
           key: 'Pro 首页',
           title: '首页',
-          href: 'https://pro.ant.design',
-          blankTarget: true,
+          href: '/',
+          blankTarget: false,
         },
         {
           key: 'github',
           title: <Icon type="github" />,
-          href: 'https://github.com/sossmc/',
+          href: 'https://github.com/Sossmc/Course-web_Front',
           blankTarget: true,
         },
         {
           key: 'Ant Design',
-          title: '相关',
-          href: 'https://ant.design',
+          title: '计院',
+          href: 'http://cspo.zju.edu.cn/index.php',
           blankTarget: true,
         },
       ]}

@@ -2,13 +2,13 @@
 export default {
   // 支持值为 Object 和 Array
   'GET /api/currentUser': {
-    name: 'SE Student',
+    name: '软工学子',
     avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
     userid: '00000001',
     email: 'antdesign@alipay.com',
     signature: '海纳百川，有容乃大',
     title: '学生',
-    group: ' 菜鸟组',
+    group: ' 菜鸟一枚',
     tags: [
       {
         key: '0',
@@ -20,18 +20,14 @@ export default {
       },
       {
         key: '2',
-        label: '辣~',
+        label: '嗨皮',
       },
       {
         key: '3',
-        label: '大长腿',
+        label: '有趣',
       },
       {
         key: '4',
-        label: '川妹子',
-      },
-      {
-        key: '5',
         label: '海纳百川',
       },
     ],
@@ -45,11 +41,11 @@ export default {
       },
       city: {
         label: '杭州市',
-        key: '330100',
+        key: '310058',
       },
     },
-    address: '西湖区工专路 77 号',
-    phone: '0752-268888888',
+    address: '西湖区玉古路',
+    phone: '0571-268888888',
   },
   // GET POST 可省略
   'GET /api/users': [
@@ -82,7 +78,23 @@ export default {
       });
       return;
     }
+    if (password === 'abc.123' && userName === 'teacher') {
+      res.send({
+        status: 'ok',
+        type,
+        currentAuthority: 'admin',
+      });
+      return;
+    }
     if (password === 'ant.design' && userName === 'user') {
+      res.send({
+        status: 'ok',
+        type,
+        currentAuthority: 'user',
+      });
+      return;
+    }
+    if (password === 'abc.123' && userName === 'fbb') {
       res.send({
         status: 'ok',
         type,

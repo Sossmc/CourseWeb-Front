@@ -97,23 +97,7 @@ class Center extends PureComponent {
         key: 'articles',
         tab: (
           <span>
-            文章 <span style={{ fontSize: 14 }}>(8)</span>
-          </span>
-        ),
-      },
-      {
-        key: 'applications',
-        tab: (
-          <span>
-            应用 <span style={{ fontSize: 14 }}>(8)</span>
-          </span>
-        ),
-      },
-      {
-        key: 'projects',
-        tab: (
-          <span>
-            项目 <span style={{ fontSize: 14 }}>(8)</span>
+            最新消息 <span style={{ fontSize: 14 }}>(3)</span>
           </span>
         ),
       },
@@ -178,14 +162,26 @@ class Center extends PureComponent {
                     <div className={styles.teamTitle}>团队</div>
                     <Spin spinning={projectLoading}>
                       <Row gutter={36}>
-                        {notice.map(item => (
+                        <Col lg={24} xl={12}>
+                          <Link to="/">
+                            <Avatar size="small" src="https://gw.alipayobjects.com/zos/rmsportal/WdGqmHpayyMjiEhcKoVE.png" />
+                            科学搬砖组
+                          </Link>
+                        </Col>
+                        <Col lg={24} xl={12}>
+                          <Link to="/">
+                            <Avatar size="small" src="https://gw.alipayobjects.com/zos/rmsportal/zOsKZmFRdUtvpqCImOVY.png"/>
+                            爱学习爱生活
+                          </Link>
+                        </Col>
+                        {/* {notice.map(item => (
                           <Col key={item.id} lg={24} xl={12}>
                             <Link to={item.href}>
                               <Avatar size="small" src={item.logo} />
                               {item.member}
                             </Link>
                           </Col>
-                        ))}
+                        ))} */}
                       </Row>
                     </Spin>
                   </div>

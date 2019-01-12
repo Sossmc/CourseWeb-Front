@@ -142,11 +142,11 @@ class Summary extends PureComponent {
                 <Card.Meta
                   title={
                     <div className={styles.cardTitle}>
-                      <Avatar size="small" src="http://101.132.135.132/logo.jpg" />
-                      <Link to="/">软件工程需求</Link>
+                      <Avatar size="small" src="http://101.132.135.132/asset/logo/xu.png" />
+                      <Link to="/profile/main">软件需求工程</Link>
                     </div>
                   }
-                  description="description"
+                  description="教师：邢卫 林海"
                 />
                 
                 <div className={styles.projectItemContent}>
@@ -159,11 +159,11 @@ class Summary extends PureComponent {
                 <Card.Meta
                   title={
                     <div className={styles.cardTitle}>
-                      <Avatar size="small" src="http://101.132.135.132/logo.jpg" />
-                      <Link to="/">软件工程需求</Link>
+                      <Avatar size="small" src="http://101.132.135.132/asset/logo/guan.png" />
+                      <Link to="/">软件工程管理</Link>
                     </div>
                   }
-                  description="description"
+                  description="教师：金波"
                 />
                 
                 <div className={styles.projectItemContent}>
@@ -176,11 +176,11 @@ class Summary extends PureComponent {
                 <Card.Meta
                   title={
                     <div className={styles.cardTitle}>
-                      <Avatar size="small" src="http://101.132.135.132/logo.jpg" />
+                      <Avatar size="small" src="http://101.132.135.132/asset/logo/ce.png" />
                       <Link to="/">软件质量测试与保障</Link>
                     </div>
                   }
-                  description="description"
+                  description="教师：胡兰青 Joe 赵晓琼 "
                 />
                 
                 <div className={styles.projectItemContent}>
@@ -211,28 +211,40 @@ class Summary extends PureComponent {
               <div className={styles.members}>
                 <Row gutter={48}>
                     <Col span={12}>
-                      <Link to="/">
-                        <Avatar src="http://101.132.135.132/logo.jpg" size="small" />
-                        <span className={styles.member}>ddd</span>
-                      </Link>
+                    <a href="http://zupo.zju.edu.cn/">
+                        <Avatar src="http://101.132.135.132/asset/logo/ban.png" size="small" />
+                        <span className={styles.member}>浙大办公网</span>
+                    </a>
                     </Col>
                     <Col span={12}>
-                      <Link to="/">
-                        <Avatar src="http://101.132.135.132/logo.jpg" size="small" />
-                        <span className={styles.member}>ddd</span>
-                      </Link>
+                      <a href="http://jwbinfosys.zju.edu.cn/default2.aspx">
+                        <Avatar src="http://101.132.135.132/asset/logo/cc98.png" size="small" />
+                        <span className={styles.member}>浙江大学教务管理系统</span>
+                      </a>
                     </Col>
                     <Col span={12}>
-                      <Link to="/">
-                        <Avatar src="http://101.132.135.132/logo.jpg" size="small" />
-                        <span className={styles.member}>ddd</span>
-                      </Link>
+                      <a href="http://bksy.zju.edu.cn/office/">
+                        <Avatar src="http://101.132.135.132/asset/logo/ben.png" size="small" />
+                        <span className={styles.member}>本科办公网</span>
+                      </a>
                     </Col>
                     <Col span={12}>
-                      <Link to="/">
-                        <Avatar src="http://101.132.135.132/logo.jpg" size="small" />
-                        <span className={styles.member}>ddd</span>
-                      </Link>
+                      <a href="http://cspo.zju.edu.cn/index.php">
+                        <Avatar src="http://101.132.135.132/asset/logo/ji.png" size="small" />
+                        <span className={styles.member}>计算机学院</span>
+                      </a>
+                    </Col>
+                    <Col span={12}>
+                      <a href="http://libweb.zju.edu.cn/libweb/">
+                        <Avatar src="http://101.132.135.132/asset/logo/lib.png" size="small" />
+                        <span className={styles.member}>浙大图书馆</span>
+                      </a>
+                    </Col>
+                    <Col span={12}>
+                      <a href="http://www.press.zju.edu.cn/default.html">
+                        <Avatar src="http://101.132.135.132/asset/logo/chu.png" size="small" />
+                        <span className={styles.member}>浙大出版社</span>
+                      </a>
                     </Col>
                 </Row>
               </div>
